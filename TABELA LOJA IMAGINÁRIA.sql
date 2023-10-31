@@ -3,7 +3,7 @@ default character set utf8
 default collate utf8_general_ci;
 
 create Table clientes(
-	id_cliente int not null auto_increment,
+    id_cliente int not null auto_increment,
     nome_cliente varchar(30) not null,
     nascimento date,
     endereco varchar (60),
@@ -13,14 +13,14 @@ create Table clientes(
     )default charset = utf8;
 
 create Table produtos(
-	id_produto int not null auto_increment,
+    id_produto int not null auto_increment,
     nome_produto varchar(30) not null,
     preco decimal(10,2),
     primary key(id_produto)
     ) default charset = utf8;
     
 create table pedidos(
-	id_pedidos int not null auto_increment,
+    id_pedidos int not null auto_increment,
     data_pedido date,
     id_do_cliente int,
     status_pedido varchar(50),
@@ -29,8 +29,8 @@ create table pedidos(
     )default charset = utf8;
 
 create table itens_do_pedido(
-	id_item_pedido int not null	auto_increment,
-	id_pedido int,
+    id_item_pedido int not null	auto_increment,
+    id_pedido int,
     id_produto int,
     quantidade int not null,
     preco_unitario decimal(10,2),
