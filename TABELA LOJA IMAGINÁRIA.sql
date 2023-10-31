@@ -36,7 +36,7 @@ create table itens_do_pedido(
     preco_unitario decimal(10,2),
     primary key (id_item_pedido),
     foreign key(id_pedido) references pedidos(id_pedidos),
-	foreign key(id_produto) references produtos(id_produto)
+    foreign key(id_produto) references produtos(id_produto)
     )default charset = utf8;
     
     
