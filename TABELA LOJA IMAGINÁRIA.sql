@@ -40,7 +40,8 @@ create table itens_do_pedido(
     )default charset = utf8;
     
     
-
+update clientes set endereço = upper(endereço);
+update clientes set nome_cliente = upper(nome_cliente);
 
 	
 
